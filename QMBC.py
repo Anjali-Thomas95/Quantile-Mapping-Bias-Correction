@@ -158,10 +158,10 @@ modeldata_bc = do_bc(modeldata, msp)
     
 t2 = datetime.datetime.now()
     
-filename= 'BC_modeldata_som43_.nc'
+filename= 'BC_modeldata_.nc'
 modeldata_bc.to_netcdf(filename)
 with open("output2.txt", "a") as f:
-    print(s,"Done saving modeldata bias corrected", t2-t0 , file=f)
+    print("Done saving modeldata bias corrected", t2-t0 , file=f)
     
             
     
